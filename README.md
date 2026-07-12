@@ -64,3 +64,46 @@ Click Here 🎁
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Disha</title>
+  <style>
+    body{
+      margin:0;
+      background:#111;
+      color:white;
+      text-align:center;
+      font-family:Arial,sans-serif;
+    }
+    .box{
+      padding:40px;
+    }
+    img{
+      width:250px;
+      border-radius:20px;
+      border:5px solid #fff;
+      margin-top:20px;
+    }
+    h1{
+      color:#ff4d6d;
+      font-size:45px;
+    }
+    p{
+      font-size:22px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>🎉 Happy Birthday Disha 🎂</h1>
+
+    <img src="disha.jpg" alt="Disha">
+
+    <p>Wishing you a day filled with happiness, love, and unforgettable memories. ❤️</p>
+  </div>
+</body>
+</html>
+<img src="1783603161529.jpg" alt="Disha">
