@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Disha</title>
+<title>Happy Birthday Disha</title>i
 
 <style>
 body{
@@ -74,4 +74,17 @@ function showWish(){
 
 </body>
 </html>
+<div class="card">
+    <img src="1783603161529.jpg.jpg" alt="DISHA"
+         style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:5px solid #ff4081;">
 
+    <h1>🎉 Happy Birthday DISHA🎂</h1>
+
+    <p>
+        Wishing you a day filled with happiness, love, and laughter.
+        May Allah bless you with good health and a long life. ❤️
+    </p>
+
+    <button onclick="showWish()">Click for Surprise</button>
+</div>
+<img src="1783603214477.jpg
