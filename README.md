@@ -100,7 +100,7 @@ Click Here 🎁
   <div class="box">
     <h1>🎉 Happy Birthday Disha 🎂</h1>
 
-    <img src="disha.jpg" alt="Disha">
+    " alt="Disha">
 
     <p>Wishing you a day filled with happiness, love, and unforgettable memories. ❤️</p>
   </div>
@@ -192,8 +192,8 @@ background:#145dbf;
 </div>
 
 <div class="post">
-<h3>দ্বিতীয় পোস্ট</h3>
-<p>এখানে তুমি নিজের ছবি, লেখা বা আপডেট যোগ করতে পারবে।</p>
+<h3></h3>
+<p><img src="1783603161529.jpg" alt="Disha">, Happy birthday disha।</p>
 <div class="buttons">
 <button>👍 Like</button>
 <button>💬 Comment</button>
@@ -205,98 +205,4 @@ background:#145dbf;
 
 </body>
 </html><!DOCTYPE html>
-<html lang="bn">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Social</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#f0f2f5;}
-header{
-background:#1877f2;
-color:#fff;
-padding:15px;
-font-size:24px;
-font-weight:bold;
-text-align:center;
-}
-.container{
-max-width:700px;
-margin:20px auto;
-}
-.profile{
-background:#fff;
-padding:20px;
-border-radius:10px;
-text-align:center;
-margin-bottom:20px;
-}
-.profile img{
-width:100px;
-height:100px;
-border-radius:50%;
-}
-.post{
-background:#fff;
-padding:15px;
-border-radius:10px;
-margin-bottom:15px;
-}
-.post h3{
-margin-bottom:10px;
-}
-.buttons{
-display:flex;
-justify-content:space-around;
-margin-top:10px;
-}
-button{
-padding:8px 18px;
-border:none;
-border-radius:5px;
-background:#1877f2;
-color:#fff;
-cursor:pointer;
-}
-button:hover{
-background:#145dbf;
-}
-</style>
-</head>
-<body>
-
-<header>My Social</header>
-
-<div class="container">
-
-<div class="profile">
-<img src="https://via.placeholder.com/100" alt="Profile">
-<h2>তোমার নাম</h2>
-<p>Welcome to my website</p>
-</div>
-
-<div class="post">
-<h3>প্রথম পোস্ট</h3>
-<p>এটি Facebook-স্টাইলের একটি সাধারণ পোস্ট।</p>
-<div class="buttons">
-<button>👍 Like</button>
-<button>💬 Comment</button>
-<button>↗ Share</button>
-</div>
-</div>
-
-<div class="post">
-<h3>দ্বিতীয় পোস্ট</h3>
-<p>এখানে তুমি নিজের ছবি, লেখা বা আপডেট যোগ করতে পারবে।</p>
-<div class="buttons">
-<button>👍 Like</button>
-<button>💬 Comment</button>
-<button>↗ Share</button>
-</div>
-</div>
-
-</div>
-
-</body>
-</html>
+<html 
