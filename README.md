@@ -1,5 +1,8 @@
 # Happy-birthday-Disha
-<!DOCTYPE html>
+<!Happy Birthday! 🎂❤️
+Wishing you a day filled with love, happiness, laughter, and unforgettable memories.
+May all your dreams come true and may this new year of your life bring endless success, good health, and joy.
+Stay blessed, keep smiling, and enjoy your special day! 🎈🎁✨>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -70,7 +73,10 @@ button:hover{
 
 <script>
 function showWish(){
-    alert("🎂 Happy Birthday Mama! May all your dreams come true. ❤️");
+    alert("🎂 Happy Birthday! 🎂❤️
+Wishing you a day filled with love, happiness, laughter, and unforgettable memories.
+May all your dreams come true and may this new year of your life bring endless success, good health, and joy.
+Stay blessed, keep smiling, and enjoy your special day! 🎈🎁✨ ❤️");
 }
 </script>
 
