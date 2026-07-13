@@ -553,3 +553,9 @@ smooth animations.
 
 </body>
 </Shuvo>
+
+
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css">
+<!-- JavaScript -->
+<script src="script.js" defer></script>
