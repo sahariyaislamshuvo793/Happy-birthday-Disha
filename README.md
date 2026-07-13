@@ -342,3 +342,214 @@ b.remove();
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shuvo | Professional Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#3b82f6;
+filter:blur(180px);
+top:-150px;
+left:-100px;
+opacity:.4;
+z-index:-2;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:450px;
+height:450px;
+background:#8b5cf6;
+filter:blur(180px);
+bottom:-150px;
+right:-100px;
+opacity:.4;
+z-index:-2;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+position:fixed;
+width:100%;
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,.05);
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.box{
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+backdrop-filter:blur(20px);
+padding:50px;
+border-radius:25px;
+max-width:800px;
+animation:up 1s ease;
+}
+
+.box img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid #38bdf8;
+object-fit:cover;
+margin-bottom:25px;
+}
+
+h1{
+font-size:50px;
+}
+
+h1 span{
+color:#38bdf8;
+}
+
+p{
+margin:20px 0;
+font-size:18px;
+color:#ddd;
+line-height:1.7;
+}
+
+.btn{
+display:inline-block;
+padding:15px 40px;
+background:#38bdf8;
+color:#fff;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 30px #38bdf8;
+}
+
+@keyframes up{
+from{
+opacity:0;
+transform:translateY(80px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+
+header{
+padding:20px;
+}
+
+nav{
+display:none;
+}
+
+h1{
+font-size:35px;
+}
+
+.box{
+padding:35px;
+}
+
+.box img{
+width:140px;
+height:140px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">SHUVO</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="box">
+
+<img src="your-photo.jpg" alt="Profile">
+
+<h1>Hi, I'm <span>Shuvo</span></h1>
+
+<p>
+Professional Web Developer creating modern,
+fast and beautiful websites with clean UI and
+smooth animations.
+</p>
+
+<a href="#" class="btn">View Portfolio</a>
+
+</div>
+
+</section>
+
+</body>
+</Shuvo>
