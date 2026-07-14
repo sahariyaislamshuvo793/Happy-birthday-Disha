@@ -1,42 +1,101 @@
-/* ===== Google Style Birthday Theme ===== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Suraiya Shammi Disha ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="balloons"></div>
+<div class="cakes"></div>
+
+<header>
+<div class="logo">
+<span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+</div>
+
+<form action="https://www.google.com/search" method="GET">
+<input type="text" name="q" placeholder="Search Google..." class="search">
+</form>
+
+<div class="apps">
+
+<a href="https://facebook.com" class="app">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+<p>Facebook</p>
+</a>
+
+<a href="https://instagram.com" class="app">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+<p>Instagram</p>
+</a>
+
+<div class="app">
+<img src="https://cdn-icons-png.flaticon.com/512/2276/2276931.png">
+<p>Cake</p>
+</div>
+
+<div class="app">
+<img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png">
+<p>Gallery</p>
+</div>
+
+</div>
+
+<section class="card">
+
+<img src="photo.jpg" class="hero">
+
+<div class="text">
+
+<h1>🎂 Happy Birthday ❤️</h1>
+
+<h2>Suraiya Shammi Disha</h2>
+
+<p>
+
+May Allah bless you with happiness,
+success and a beautiful life.
+
+Stay smiling forever.
+
+I Love You So Much ❤️
+
+Happy Birthday 🎉
+
+</p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#202124;
-  color:#fff;
-  overflow-x:hidden;
-}
-
-header{
-  display:flex;
-  justify-content:flex-end;
-  padding:20px;
-}
-
-header a{
-  color:#fff;
-  text-decoration:none;
-  margin-left:20px;
-  font-size:15px;
-}
-
-.container{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  margin-top:60px;
+background:#202124;
+color:#fff;
+overflow-x:hidden;
+text-align:center;
 }
 
 .logo{
-  font-size:80px;
-  font-weight:bold;
+font-size:70px;
+font-weight:bold;
+margin-top:40px;
 }
 
 .logo span:nth-child(1){color:#4285F4;}
@@ -47,180 +106,150 @@ header a{
 .logo span:nth-child(6){color:#EA4335;}
 
 .search{
-  width:650px;
-  max-width:90%;
-  margin-top:25px;
-}
-
-.search input{
-  width:100%;
-  padding:16px 25px;
-  border:none;
-  border-radius:40px;
-  background:#303134;
-  color:#fff;
-  font-size:18px;
-  outline:none;
+width:90%;
+max-width:650px;
+padding:15px;
+margin:30px auto;
+display:block;
+border:none;
+border-radius:30px;
+background:#303134;
+color:#fff;
+font-size:18px;
+outline:none;
 }
 
 .apps{
-  display:grid;
-  grid-template-columns:repeat(4,90px);
-  gap:20px;
-  margin-top:35px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin:30px;
 }
 
 .app{
-  width:90px;
-  height:90px;
-  border-radius:20px;
-  background:#303134;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  cursor:pointer;
-  transition:.3s;
+background:#303134;
+padding:15px;
+border-radius:15px;
+width:90px;
+text-decoration:none;
+color:#fff;
+transition:.3s;
 }
 
 .app:hover{
-  transform:scale(1.08);
+transform:scale(1.08);
 }
 
 .app img{
-  width:42px;
-  height:42px;
+width:45px;
+height:45px;
 }
 
-.app p{
-  margin-top:8px;
-  font-size:13px;
+.card{
+width:90%;
+max-width:900px;
+margin:40px auto;
+background:#303134;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 0 20px rgba(255,255,255,.08);
 }
 
-.news-card{
-  width:90%;
-  max-width:900px;
-  margin:50px auto;
-  background:#303134;
-  border-radius:20px;
-  overflow:hidden;
+.hero{
+width:100%;
+height:420px;
+object-fit:cover;
 }
 
-.news-card img{
-  width:100%;
-  display:block;
+.text{
+padding:25px;
 }
 
-.note{
-  padding:25px;
-  text-align:center;
+.text h1{
+color:#ff4d6d;
+margin-bottom:10px;
 }
 
-.note h2{
-  color:#ff4d6d;
-  margin-bottom:10px;
+.text h2{
+margin-bottom:15px;
 }
 
-.note p{
-  line-height:1.8;
-  color:#ddd;
+.text p{
+line-height:1.8;
+color:#ddd;
 }
 
-/* ===== Birthday Card ===== */
-
-.birthday-card{
-    width:90%;
-    max-width:900px;
-    margin:40px auto;
-    background:#303134;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 0 20px rgba(255,255,255,.08);
+.balloon,
+.cake{
+position:fixed;
+top:-120px;
+pointer-events:none;
+z-index:999;
+animation:fall linear infinite;
 }
-
-.birthday-card img{
-    width:100%;
-    height:420px;
-    object-fit:cover;
-}
-
-.birthday-content{
-    padding:25px;
-    text-align:center;
-}
-
-.birthday-content h1{
-    color:#ff4d6d;
-    font-size:36px;
-    margin-bottom:15px;
-}
-
-.birthday-content p{
-    color:#ddd;
-    font-size:18px;
-    line-height:1.8;
-}
-
-/* Balloon */
 
 .balloon{
-    position:fixed;
-    top:-120px;
-    width:45px;
-    animation:fallBalloon linear infinite;
-    z-index:999;
+font-size:40px;
 }
-
-@keyframes fallBalloon{
-0%{
-transform:translateY(-120px) rotate(0deg);
-}
-100%{
-transform:translateY(120vh) rotate(360deg);
-}
-}
-
-/* Cake */
 
 .cake{
-    position:fixed;
-    top:-100px;
-    width:60px;
-    animation:fallCake linear infinite;
-    z-index:998;
+font-size:34px;
 }
 
-@keyframes fallCake{
-0%{
-transform:translateY(-100px);
-}
-100%{
-transform:translateY(120vh);
-}
-}
+@key
 
-/* Responsive */
+// Balloon Rain
+const balloonBox = document.querySelector(".balloons");
 
-@media(max-width:768px){
+function createBalloon() {
+    const b = document.createElement("div");
+    b.className = "balloon";
+    b.innerHTML = "🎈";
 
-.logo{
-font-size:60px;
-}
+    b.style.left = Math.random() * 100 + "vw";
+    b.style.animationDuration = (4 + Math.random() * 5) + "s";
+    b.style.fontSize = (30 + Math.random() * 30) + "px";
 
-.apps{
-grid-template-columns:repeat(2,90px);
-}
+    balloonBox.appendChild(b);
 
-.birthday-card img{
-height:260px;
+    setTimeout(() => {
+        b.remove();
+    }, 9000);
 }
 
-.birthday-content h1{
-font-size:28px;
+setInterval(createBalloon, 400);
+
+
+// Cake Rain
+const cakeBox = document.querySelector(".cakes");
+
+function createCake() {
+    const c = document.createElement("div");
+    c.className = "cake";
+    c.innerHTML = "🎂";
+
+    c.style.left = Math.random() * 100 + "vw";
+    c.style.animationDuration = (5 + Math.random() * 4) + "s";
+    c.style.fontSize = (25 + Math.random() * 20) + "px";
+
+    cakeBox.appendChild(c);
+
+    setTimeout(() => {
+        c.remove();
+    }, 9000);
 }
 
-.birthday-content p{
-font-size:16px;
-}
+setInterval(createCake, 900);
 
-.search{
+
+// Auto Focus Search
+window.onload = () => {
+    document.querySelector(".search").focus();
+};
+
+
+// Birthday Message
+setTimeout(() => {
+    alert("🎉 Happy Birthday Suraiya Shammi Disha ❤️\n\nMay Allah Bless You Always! 🎂");
+}, 1500);
