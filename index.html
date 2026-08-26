@@ -1,1 +1,350 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen-Z Travels BD | Bangladesh & Beyond</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Hind Siliguri', 'Poppins', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .glass-dark { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .spidey-hover:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 10px 25px -5px rgba(225, 29, 72, 0.4); }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-rose-600 selection:text-white">
 
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-dark border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-rose-600 to-indigo-600 flex items-center justify-center font-bold text-xl shadow-lg">GZ</div>
+                <div>
+                    <span class="text-xl font-bold tracking-wider bg-gradient-to-r from-rose-500 via-purple-400 to-indigo-400 bg-clip-text text-transparent">GEN-Z TRAVELS BD</span>
+                    <p class="text-xs text-slate-400 tracking-widest">BANGLADESH & BEYOND</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="#home" class="hover:text-rose-500 transition">Home</a>
+                <a href="#tours" class="hover:text-rose-500 transition">Tours</a>
+                <a href="#destinations" class="hover:text-rose-500 transition">Destinations</a>
+                <a href="#gallery" class="hover:text-rose-500 transition">Gallery</a>
+                <a href="#reviews" class="hover:text-rose-500 transition">Reviews</a>
+                <a href="#faq" class="hover:text-rose-500 transition">FAQ</a>
+                <a href="#contact" class="hover:text-rose-500 transition">Contact</a>
+            </div>
+            <button onclick="openBookingModal('General')" class="bg-gradient-to-r from-rose-600 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white font-semibold px-5 py-2.5 rounded-full shadow-lg transition duration-300 spidey-hover">
+                <i class="fa-solid fa-paper-plane mr-2"></i>Book Now
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80" class="w-full h-full object-cover opacity-30" alt="Travel Background">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/50 via-slate-950/80 to-slate-950"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+            <span class="px-4 py-1.5 rounded-full glass text-xs font-semibold text-rose-400 uppercase tracking-widest inline-block mb-4">Explore With Confidence</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                ঘুরে আসুন বাংলাদেশের <span class="bg-gradient-to-r from-rose-500 to-indigo-500 bg-clip-text text-transparent">সেরা ভ্রমণ স্থানগুলোতে</span>
+            </h1>
+            <p class="text-slate-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                সাজেক, কক্সবাজার, বান্দরবান কিংবা সিলেট—আপনার স্বপ্নের ভ্রমণকে সহজ, নিরাপদ ও স্মরণীয় করতে Gen-Z Travels BD আছে আপনার সাথে।
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#tours" class="bg-rose-600 hover:bg-rose-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition spidey-hover text-center">
+                    জনপ্রিয় প্যাকেজসমূহ
+                </a>
+                <a href="#destinations" class="glass hover:bg-white/20 text-white font-bold px-8 py-4 rounded-xl transition text-center">
+                    ম্যাপ থেকে গন্তব্য বেছে নিন
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages -->
+    <section id="tours" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3">জনপ্রিয় ট্যুর প্যাকেজসমূহ</h2>
+            <p class="text-slate-400">আপনার বাজেটের মধ্যে সেরা ট্রাভেল প্ল্যান বেছে নিন</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Package Card 1 -->
+            <div class="glass-dark rounded-2xl overflow-hidden border border-slate-800 spidey-hover transition duration-300 flex flex-col">
+                <div class="relative h-56">
+                    <img src="https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover" alt="Sajek Valley">
+                    <span class="absolute top-4 right-4 bg-rose-600 text-xs font-bold px-3 py-1.5 rounded-full">৩ দিন / ২ রাত</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">মেঘের রাজ্য সাজেক ভ্যালি</h3>
+                        <p class="text-slate-400 text-sm mb-4">কংলাক পাহাড়, রুইলুই পাড়া, এবং আলুটিলা গুহা এক্সপ্লোর করুন।</p>
+                        <div class="space-y-2 text-xs text-slate-300 mb-6">
+                            <div><i class="fa-solid fa-bus text-rose-500 mr-2"></i>এসি/নন-এসি বাস ও চাঁদের গাড়ি</div>
+                            <div><i class="fa-solid fa-hotel text-rose-500 mr-2"></i>প্রিমিয়াম রিসোর্ট স্টে</div>
+                            <div><i class="fa-solid fa-utensils text-rose-500 mr-2"></i>প্রতিদিন ৩ বেলা আহার</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-800 pt-4">
+                        <div>
+                            <span class="text-xs text-slate-400 block">শুরু মাত্র</span>
+                            <span class="text-2xl font-bold text-rose-500">৳ ৫,৫০০</span>
+                        </div>
+                        <button onclick="openBookingModal('Sajek Valley')" class="bg-rose-600 hover:bg-rose-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Card 2 -->
+            <div class="glass-dark rounded-2xl overflow-hidden border border-slate-800 spidey-hover transition duration-300 flex flex-col">
+                <div class="relative h-56">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover" alt="Cox's Bazar">
+                    <span class="absolute top-4 right-4 bg-rose-600 text-xs font-bold px-3 py-1.5 rounded-full">৪ দিন / ৩ রাত</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">কক্সবাজার ও ইনানী বীচ</h3>
+                        <p class="text-slate-400 text-sm mb-4">বিশ্বের দীর্ঘতম সমুদ্র সৈকতে কাটান আপনার ছুটি।</p>
+                        <div class="space-y-2 text-xs text-slate-300 mb-6">
+                            <div><i class="fa-solid fa-bus text-rose-500 mr-2"></i>রয়েল টিউলিপ সাইটসিয়িং</div>
+                            <div><i class="fa-solid fa-hotel text-rose-500 mr-2"></i>3-Star বিচ ভিউ হোটেল</div>
+                            <div><i class="fa-solid fa-utensils text-rose-500 mr-2"></i>সী-ফুড ডিনার সহ বোনাস</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-800 pt-4">
+                        <div>
+                            <span class="text-xs text-slate-400 block">শুরু মাত্র</span>
+                            <span class="text-2xl font-bold text-rose-500">৳ ৬,৯৯৯</span>
+                        </div>
+                        <button onclick="openBookingModal('Cox\'s Bazar')" class="bg-rose-600 hover:bg-rose-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Card 3 -->
+            <div class="glass-dark rounded-2xl overflow-hidden border border-slate-800 spidey-hover transition duration-300 flex flex-col">
+                <div class="relative h-56">
+                    <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover" alt="Sylhet">
+                    <span class="absolute top-4 right-4 bg-rose-600 text-xs font-bold px-3 py-1.5 rounded-full">২ দিন / ১ রাত</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">সিলেট ও জাফলং ট্যুর</h3>
+                        <p class="text-slate-400 text-sm mb-4">সাদা পাথর, রাতারগুল ফ্রেশওয়াটার সোয়াম্প ফরেস্ট ও চা বাগান।</p>
+                        <div class="space-y-2 text-xs text-slate-300 mb-6">
+                            <div><i class="fa-solid fa-ship text-rose-500 mr-2"></i>বোট রাইড সার্ভিস অন্তর্ভুক্ত</div>
+                            <div><i class="fa-solid fa-hotel text-rose-500 mr-2"></i>শহরের প্রাণকেন্দ্রে হোটেল</div>
+                            <div><i class="fa-solid fa-camera text-rose-500 mr-2"></i>ফটোগ্রাফি সাপোর্ট</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-800 pt-4">
+                        <div>
+                            <span class="text-xs text-slate-400 block">শুরু মাত্র</span>
+                            <span class="text-2xl font-bold text-rose-500">৳ ৪,২০০</span>
+                        </div>
+                        <button onclick="openBookingModal('Sylhet Jaflong')" class="bg-rose-600 hover:bg-rose-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Destination Section -->
+    <section id="destinations" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3">আমাদের ভ্রমণ গন্তব্যসমূহ</h2>
+                <p class="text-slate-400">বাংলাদেশের ৪১+ টি জেলা ও জনপ্রিয় ট্যুর স্পটসমূহ</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+                <div class="glass p-4 rounded-xl text-center spidey-hover cursor-pointer" onclick="openBookingModal('Cox\'s Bazar')">
+                    <i class="fa-solid fa-umbrella-beach text-3xl text-rose-500 mb-2"></i>
+                    <h4 class="font-bold text-sm">Cox's Bazar</h4>
+                </div>
+                <div class="glass p-4 rounded-xl text-center spidey-hover cursor-pointer" onclick="openBookingModal('Sajek')">
+                    <i class="fa-solid fa-cloud-sun text-3xl text-indigo-400 mb-2"></i>
+                    <h4 class="font-bold text-sm">Sajek</h4>
+                </div>
+                <div class="glass p-4 rounded-xl text-center spidey-hover cursor-pointer" onclick="openBookingModal('Sylhet')">
+                    <i class="fa-solid fa-leaf text-3xl text-emerald-400 mb-2"></i>
+                    <h4 class="font-bold text-sm">Sylhet</h4>
+                </div>
+                <div class="glass p-4 rounded-xl text-center spidey-hover cursor-pointer" onclick="openBookingModal('Bandarban')">
+                    <i class="fa-solid fa-mountain text-3xl text-amber-400 mb-2"></i>
+                    <h4 class="font-bold text-sm">Bandarban</h4>
+                </div>
+                <div class="glass p-4 rounded-xl text-center spidey-hover cursor-pointer" onclick="openBookingModal('Saint Martin')">
+                    <i class="fa-solid fa-water text-3xl text-cyan-400 mb-2"></i>
+                    <h4 class="font-bold text-sm">Saint Martin</h4>
+                </div>
+                <div class="glass p-4 rounded-xl text-center spidey-hover cursor-pointer" onclick="openBookingModal('Rangamati')">
+                    <i class="fa-solid fa-bridge text-3xl text-purple-400 mb-2"></i>
+                    <h4 class="font-bold text-sm">Rangamati</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Gallery -->
+    <section id="gallery" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3">ট্যুর গ্যালারি</h2>
+            <p class="text-slate-400">আমাদের বাস্তব ট্যুরের কিছু স্মৃতিচিহ্ন</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-48 w-full object-cover spidey-hover" alt="Gallery 1">
+            <img src="https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-48 w-full object-cover spidey-hover" alt="Gallery 2">
+            <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-48 w-full object-cover spidey-hover" alt="Gallery 3">
+            <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-48 w-full object-cover spidey-hover" alt="Gallery 4">
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3">কাস্টমারদের মতামত</h2>
+                <p class="text-slate-400">আমাদের সার্ভিস সম্পর্কে ভ্রমণকারীদের অভিজ্ঞতার কথা</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-dark p-6 rounded-xl border border-slate-800">
+                    <div class="flex items-center gap-1 text-amber-400 mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">"সাজেক ট্যুরের গাইড এবং খাবারের মান চমৎকার ছিল। নিখুঁত ট্রাভেল এক্সপেরিয়েন্স!"</p>
+                    <div class="font-semibold text-rose-400 text-sm">- তানভীর আহমেদ</div>
+                </div>
+                <div class="glass-dark p-6 rounded-xl border border-slate-800">
+                    <div class="flex items-center gap-1 text-amber-400 mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">"কক্সবাজার ট্রিপে হোটেল রুম ভিউ দুর্দান্ত ছিল। সার্ভিস ও টাইম ম্যানেজমেন্ট ১০০/১০০।"</p>
+                    <div class="font-semibold text-rose-400 text-sm">- ফারজানা রহমান</div>
+                </div>
+                <div class="glass-dark p-6 rounded-xl border border-slate-800">
+                    <div class="flex items-center gap-1 text-amber-400 mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">"ফ্রেন্ডলি বাজেট এবং প্রফেশনাল গাইডলাইন। জেন-জি ট্রাভেলস ইজ দ্য বেস্ট।"</p>
+                    <div class="font-semibold text-rose-400 text-sm">- মেহেদী হাসান</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 max-w-4xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3">সাধারণ প্রশ্নাবলী (FAQ)</h2>
+            <p class="text-slate-400">আপনার প্রয়োজনীয় প্রশ্নের উত্তর এখানে খুঁজুন</p>
+        </div>
+        <div class="space-y-4">
+            <details class="glass-dark p-4 rounded-xl border border-slate-800 cursor-pointer">
+                <summary class="font-semibold text-lg">বুকিং নিশ্চিত করতে কত শতাংশ অ্যাডভান্স করতে হয়?</summary>
+                <p class="text-slate-400 text-sm mt-2">বুকিং কনফার্মেশনের জন্য মোট খরচের ৫০% বিকাশ, নগদ বা ব্যাংক ট্রান্সফারের মাধ্যমে পেমেন্ট করতে হয়।</p>
+            </details>
+            <details class="glass-dark p-4 rounded-xl border border-slate-800 cursor-pointer">
+                <summary class="font-semibold text-lg">ক্যানসোলেশন পলিসি কেমন?</summary>
+                <p class="text-slate-400 text-sm mt-2">যাত্রার ৩ দিন আগে ক্যানসেল করলে ৫০% রিফান্ড পাওয়া যাবে। ক্যানসোলেশন পলিসি পাতায় বিস্তারিত তথ্য পাবেন।</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Contact & Payment Methods -->
+    <section id="contact" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">যোগাযোগের ঠিকানা</h2>
+                <div class="space-y-4 text-slate-300">
+                    <p><i class="fa-solid fa-location-dot text-rose-500 mr-3"></i> ঢাকা, সাভার, বাংলাদেশ</p>
+                    <p><i class="fa-solid fa-phone text-rose-500 mr-3"></i> +880 1700-000000</p>
+                    <p><i class="fa-solid fa-envelope text-rose-500 mr-3"></i> info@genztravelsbd.com</p>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-xl font-bold mb-4">স্বীকৃত পেমেন্ট মাধ্যম</h3>
+                    <div class="flex gap-4 items-center">
+                        <span class="bg-pink-600 px-4 py-2 rounded-lg font-bold text-xs">bKash</span>
+                        <span class="bg-orange-600 px-4 py-2 rounded-lg font-bold text-xs">Nagad</span>
+                        <span class="bg-purple-600 px-4 py-2 rounded-lg font-bold text-xs">Rocket</span>
+                        <span class="bg-blue-600 px-4 py-2 rounded-lg font-bold text-xs">Bank Transfer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <h3 class="text-2xl font-bold mb-4">আমাদের মেসেজ পাঠান</h3>
+                <form class="space-y-4">
+                    <input type="text" placeholder="আপনার নাম" class="w-full bg-slate-950 border border-slate-800 p-3 rounded-lg text-sm text-white focus:outline-none focus:border-rose-500">
+                    <input type="email" placeholder="আপনার ইমেইল" class="w-full bg-slate-950 border border-slate-800 p-3 rounded-lg text-sm text-white focus:outline-none focus:border-rose-500">
+                    <textarea placeholder="বার্তা লিখুন..." rows="4" class="w-full bg-slate-950 border border-slate-800 p-3 rounded-lg text-sm text-white focus:outline-none focus:border-rose-500"></textarea>
+                    <button class="w-full bg-rose-600 hover:bg-rose-500 font-bold py-3 rounded-lg transition">মেসেজ পাঠান</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-8 text-center text-sm text-slate-500">
+        <p>© 2026 Gen-Z Travels BD. All Rights Reserved. Built by Sahariya Islam Shuvo.</p>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="glass-dark border border-slate-800 p-8 rounded-2xl max-w-lg w-full relative">
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <h3 class="text-2xl font-bold mb-4">ট্যুর বুকিং ফর্ম</h3>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('বুকিং রিকোয়েস্ট গ্রহণ করা হয়েছে!'); closeBookingModal();">
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">প্যাকেজের নাম</label>
+                    <input id="modalPackageName" type="text" readonly class="w-full bg-slate-900 border border-slate-800 p-3 rounded-lg text-sm text-rose-400 font-bold">
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">আপনার নাম</label>
+                    <input type="text" required class="w-full bg-slate-900 border border-slate-800 p-3 rounded-lg text-sm text-white focus:outline-none focus:border-rose-500">
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">ফোন নম্বর</label>
+                    <input type="tel" required class="w-full bg-slate-900 border border-slate-800 p-3 rounded-lg text-sm text-white focus:outline-none focus:border-rose-500">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-xs text-slate-400 block mb-1">ভ্রমণকারীর সংখ্যা</label>
+                        <input type="number" min="1" value="1" class="w-full bg-slate-900 border border-slate-800 p-3 rounded-lg text-sm text-white focus:outline-none focus:border-rose-500">
+                    </div>
+                    <div>
+                        <label class="text-xs text-slate-400 block mb-1">ভ্রমণের তারিখ</label>
+                        <input type="date" required class="w-full bg-slate-900 border border-slate-800 p-3 rounded-lg text-sm text-white focus:outline-none focus:border-rose-500">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">পেমেন্ট মাধ্যম</label>
+                    <select class="w-full bg-slate-900 border border-slate-800 p-3 rounded-lg text-sm text-white focus:outline-none focus:border-rose-500">
+                        <option>bKash</option>
+                        <option>Nagad</option>
+                        <option>Rocket</option>
+                        <option>Bank Transfer</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-rose-600 to-indigo-600 text-white font-bold py-3 rounded-lg shadow-lg spidey-hover mt-4">বুকিং নিশ্চিত করুন</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function openBookingModal(packageName) {
+            document.getElementById('modalPackageName').value = packageName;
+            document.getElementById('bookingModal').classList.remove('hidden');
+        }
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+        }
+    </script>
+</body>
+                          </html>
